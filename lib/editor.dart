@@ -68,4 +68,9 @@ class _EditorState extends State<Editor> {
       ),
     );
   }
+
+  @override
+  void dispose() {
+    _textEditingController.dispose();
+  }
 }
